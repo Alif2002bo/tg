@@ -37,11 +37,11 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true'),
+            InlineKeyboardButton('📢 share Group 📢', url=f' https://t.me/share/url?url=https://t.me/Cinemachanda'),
             InlineKeyboardButton('🙏 support group 🙏', url=f'https://t.me/Cinemachanda')
             ],[
             InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('📢 Updates', url='https://t.me/EvaMariaUpdates')
+            InlineKeyboardButton('📢 Updates', url='https://t.me/joinchat/AQ6BQ17Ad4Q0ZDU1')
             ],[
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
             InlineKeyboardButton('😊 About', callback_data='about')
@@ -63,7 +63,7 @@ async def start(client, message):
         btn = [
             [
                 InlineKeyboardButton(
-                    "🤖 Join Updates Channel", url=invite_link.invite_link
+                    "📢 Join Updates Channel 📢", url=invite_link.invite_link
                 )
             ]
         ]
@@ -79,11 +79,11 @@ async def start(client, message):
         return
     if len(message.command) ==2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true'),
+            InlineKeyboardButton('📢 share Group 📢', url=f'https://t.me/share/url?url=https://t.me/Cinemachanda'),
             InlineKeyboardButton('🙏 support group 🙏',url=f'http://t.me/cinemacanda')
             ],[
             InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('📢 Updates', url='https://t.me/EvaMariaUpdates')
+            InlineKeyboardButton('📢 Updates', url='https://t.me/joinchat/AQ6BQ17Ad4Q0ZDU1')
             ],[
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
             InlineKeyboardButton('😊 About', callback_data='about')
